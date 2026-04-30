@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simone Morieri | Data Portfolio</title>
+  <meta name="description" content="Data analytics and web development portfolio by Simone Morieri. Sports analytics, Python notebooks, visual storytelling and web projects." />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="/">Simone Morieri</a>
+        <div class="nav-links" aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Data Analytics · Sports · Web Development</span>
+        <h1>I turn messy datasets into clear stories, useful visuals and practical decisions.</h1>
+        <p>
+          I am a web developer moving deeper into data analytics, with a strong focus on sports analytics,
+          Python notebooks, reproducible workflows and visual explanations built for real audiences.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="https://github.com/elmurie" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/simonemorieri/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured projects</h2>
+          <p>Selected analyses focused on asking a clear question, building a reproducible workflow and communicating the result visually.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card project-card">
+            <div>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Tennis</span>
+                <span class="tag">Data Viz</span>
+              </div>
+              <h3>ATP ranking gap and upset probability</h3>
+              <p>
+                An analysis of ATP matches exploring how ranking difference relates to the probability of an upset,
+                with binned curves and chart-ready outputs for editorial publishing.
+              </p>
+            </div>
+            <a class="project-link" href="projects/atp-ranking-upsets/">Open project →</a>
+          </article>
+
+          <article class="card project-card">
+            <div>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Basketball</span>
+                <span class="tag">Scenario Analysis</span>
+                <span class="tag">Notebook</span>
+              </div>
+              <h3>Pistoia playout prediction</h3>
+              <p>
+                A basketball analytics notebook built to answer a practical question: who is Pistoia most likely to face
+                in the Serie A2 playout, using available team data and clear assumptions.
+              </p>
+            </div>
+            <a class="project-link" href="projects/pistoia-playout-prediction/">Open project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>A mix of analytics, communication and production skills from web development and sports media work.</p>
+        </div>
+
+        <div class="skills">
+          <div class="card skill">
+            <h3>Analysis</h3>
+            <p>Python, Pandas, SQL, exploratory analysis, data cleaning.</p>
+          </div>
+          <div class="card skill">
+            <h3>Visualization</h3>
+            <p>Matplotlib, Datawrapper, dashboard thinking, chart storytelling.</p>
+          </div>
+          <div class="card skill">
+            <h3>Web</h3>
+            <p>HTML, CSS, JavaScript, Laravel, Vue, Git, Docker.</p>
+          </div>
+          <div class="card skill">
+            <h3>Communication</h3>
+            <p>LinkedIn writing, match reports, commentary, audience-first explanations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <div class="card">
+          <h2>About me</h2>
+          <p>
+            I am Simone Morieri, a web developer based in Tuscany, Italy. My background is in building websites and digital products,
+            and I am now applying that technical foundation to data analytics.
+          </p>
+          <br />
+          <p>
+            My strongest interest is sports analytics: turning raw match data into insights that coaches, fans and decision-makers can actually use.
+          </p>
+        </div>
+        <div class="card">
+          <h2>What I am looking for</h2>
+          <p>
+            I am interested in opportunities where data, product thinking and communication meet: Data Analyst roles,
+            web/data hybrid roles, and sports analytics projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>
+            You can find my work on <a class="project-link" href="https://github.com/elmurie" target="_blank" rel="noopener">GitHub</a>
+            or connect with me on <a class="project-link" href="https://www.linkedin.com/in/simonemorieri/" target="_blank" rel="noopener">LinkedIn</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Simone Morieri · Data Portfolio
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
